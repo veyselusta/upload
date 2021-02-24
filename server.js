@@ -1,5 +1,6 @@
 const express = require('express')
 const indexRouter = require('./routes/index')
+require('./mongo-connection')
 
 const app = express()
 

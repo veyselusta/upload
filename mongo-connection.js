@@ -1,8 +1,6 @@
 const mongoose = require('mongoose')
 
-const connectionString = process.env.MONGODB_CONNECTION_STRING || 'mongodb://mongodb/upload-image'
-
-mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost/upload', { useNewUrlParser: true, useUnifiedTopology: true })
 
 var db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'))
