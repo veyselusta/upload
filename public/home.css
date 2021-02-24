@@ -1,0 +1,9 @@
+.container{
+  box-sizing: border-box;
+}
+.box{
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: hotpink;
+}
