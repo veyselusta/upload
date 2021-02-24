@@ -2,7 +2,7 @@ const router = require('express').Router()
 const User = require('../models/user')
 
 router.get('/', (req, res) => {
-  res.send('ok')
+  res.render('home')
 })
 
 router.post('/create', async (req, res) => {
